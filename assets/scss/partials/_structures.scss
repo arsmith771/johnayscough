@@ -1,0 +1,306 @@
+
+
+/*=================================
+=            Structure            =
+=================================*/
+.pagination-container{
+	width:260px;
+	float:left;
+	@media only screen and (max-width: 1365px) {
+		width:auto;
+		float:none;
+	}
+}
+.work{
+	position:relative;
+	/*height :calc(100vh - 167px);
+	width: calc(100% - 260px);
+	max-height: 1027px;
+	overflow:hidden;
+	position: relative;
+	float: right;
+
+	@media only screen and (max-width: 1365px) {
+	
+		
+		 float:none;
+		width:100%;
+		height:auto;
+	}
+	*/
+	&__details{
+		text-align:center;
+		font-size: 0.8em;
+		margin-top:10px;
+	}
+	&__pagination{
+		
+		@media only screen and (min-width: 1000px) {
+			position:absolute;
+			top:50%;
+		}
+		&--previous{
+			float:left;
+			@media only screen and (min-width: 1000px) {
+				left:0;
+				float:none;
+			}
+			&:before{
+				content:"<< ";
+			}
+		}
+		&--next{
+			float:right;
+			@media only screen and (min-width: 1000px) {
+				right:0;
+				float:none;
+			}
+			&:after{
+				content:" >>";
+			}
+		}
+	}
+	img{
+		max-height: calc(100vh - 180px);
+		margin: 0 auto;
+    	display: block;
+    	width: auto;
+		/*position:absolute;
+		height:100%;
+		width:auto;
+		display:block;
+		@media only screen and (max-width: 1365px) {
+			position:static;
+			height:auto;
+			width:100%;
+		}*/
+	}	
+}
+.home-thumbs{
+	&__lnk{
+		max-width:300px;
+		display: inline-block;
+	}
+}
+
+/*----------  Site Containers  ----------*/
+
+.site-container {
+	max-width: 90%;
+	margin: 0 5%;
+}
+
+.site-inner,
+.wrap,
+.site-footer {
+	margin: 0 auto;
+	max-width: 1830px;
+}
+
+.site-inner {
+
+}
+
+/*----------  Site Header  ----------*/
+
+.site-header {
+	background: #fff;
+	width: 100%;
+
+	@media only screen and (min-width: $break-medium) {
+		> .wrap {
+		
+		}
+	}
+
+	> .wrap {
+		
+
+		@media only screen and (min-width: $break-large) {
+			
+		}
+	}
+}
+
+.admin-bar .site-header {
+	top: 46px;
+}
+
+.title-area {
+	float: left;
+	width:177px;
+	height:83px;
+	overflow:hidden;
+	margin: 20px 0;
+	a{
+		background-image: url('https://johnayscough.co.uk/wp-content/themes/johnayscough/assets/img/JA-logo.png');
+		text-indent: -9999em;
+		display: block;
+		width: 177px;
+		height: 83px;
+	}
+}
+
+.header-widget-area {
+	display: none;
+	float: right;
+}
+
+/*----------  Widgets  ----------*/
+
+.widget {
+	word-wrap: break-word;
+
+	ol > li {
+		list-style-position: inside;
+		list-style-type: decimal;
+		padding-left: 20px;
+		text-indent: -20px;
+	}
+
+	li li {
+		border: 0;
+		margin: 0 0 0 30px;
+		padding: 0;
+	}
+}
+
+.widget_calendar {
+
+	table {
+		width: 100%;
+	}
+
+	th,
+	td {
+		text-align: center;
+	}
+}
+
+/*=====================================
+=            Media Queries            =
+=====================================*/
+
+/*----------  768  ----------*/
+
+@media screen and (min-width: 768px) {
+
+	/* Structure */
+	.site-inner,
+	.site-footer {
+		
+	}
+
+	.footer-widgets {
+	
+	}
+
+}
+
+/*----------  1200  ----------*/
+
+@media screen and (min-width: 1200px) {
+
+	/* Structure */
+	.site-inner {
+		margin-top: 0;
+	}
+
+	/* Layout Wrappers */
+	.content-sidebar-sidebar,
+	.sidebar-content-sidebar,
+	.sidebar-sidebar-content {
+
+		.content-sidebar-wrap {
+			
+		}
+	}
+
+	.content-sidebar-sidebar .content-sidebar-wrap {
+		
+	}
+
+	.sidebar-content-sidebar .content-sidebar-wrap,
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		
+	}
+
+	.content {
+	
+	}
+
+	.content-sidebar,
+	.content-sidebar-sidebar,
+	.sidebar-content-sidebar {
+		.content {
+			
+		}
+	}
+
+	.content-sidebar-sidebar,
+	.sidebar-content-sidebar,
+	.sidebar-sidebar-content {
+
+		.content {
+			width: 580px;
+		}
+	}
+
+	.full-width-content .content {
+		width: 100%;
+	}
+
+	/*----------  Columns  ----------*/
+	.five-sixths,
+	.four-sixths,
+	.one-fourth,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-sixths,
+	.two-fourths,
+	.two-sixths,
+	.two-thirds {
+		float: left;
+		margin-left: 2.564102564102564%;
+	}
+
+	.one-half,
+	.three-sixths,
+	.two-fourths {
+		width: 48.717948717948715%;
+	}
+
+	.one-third,
+	.two-sixths {
+		width: 31.623931623931625%;
+	}
+
+	.four-sixths,
+	.two-thirds {
+		width: 65.81196581196582%;
+	}
+
+	.one-fourth {
+		width: 23.076923076923077%;
+	}
+
+	.three-fourths {
+		width: 74.35897435897436%;
+	}
+
+	.one-sixth {
+		width: 14.52991452991453%;
+	}
+
+	.five-sixths {
+		width: 82.90598290598291%;
+	}
+
+	.first {
+		clear: both;
+		margin-left: 0;
+	}
+
+}
